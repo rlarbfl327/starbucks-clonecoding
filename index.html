@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <script src="https://kit.fontawesome.com/e3f89440bb.js" crossorigin="anonymous"></script>
+    <title>Starbucks</title>
+    <link rel="icon" type="img/png" href="img/navbar/logo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/search.js" defer></script>
+    <script src="js/tab.js" defer></script>
+    <script src="js/badge.js"defer></script>
+    <script src="js/scroll.js" defer></script>
+    <script src="js/accordion.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src ="js/mobileMenu.js" defer></script>
+    <script src="js/banner.js" defer></script>
+    <script src="js/refresh.js"defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav__container">
+        <div class="nav__logo">
+          <a href="#"><img class="logo" src="img/navbar/logo.png" /></a>
+        </div>
+        <div class="nav__content">
+          <ul class="small__nav">
+            <li class="small__nav__items">
+              <a href="https://github.com/hae-on/Starbucks_Clone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="small__nav__items">Sign In</li>
+            <li class="small__nav__items">My Starbucks</li>
+            <li class="small__nav__items">Customer Service & Ideas</li>
+            <li class="small__nav__no-line">Find a Store</li>
+            <div class="nav__input">
+              <form class="nav__input__form">
+                <input type="text" class="small__nav__input" placeholder="통합검색">
+                <button class="small__nav__btn" type="button">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>     
+          </ul>
+          <ul class="main__nav">
+            <li class="main__nav__items">COFFEE</li>
+            <li class="main__nav__items">MENU</li>
+            <li class="main__nav__items">STORE</li>
+            <li class="main__nav__items">RESPONSIBILITY</li>
+            <li class="main__nav__items">STARBUCKS REWARDS</li>
+            <li class="main__nav__items">WHAT'S NEW</li>
+          </ul>
+        </div>
+        <!-- Media icons -->
+        <ul class="media__icons">
+          <li class="media__icon"><i class="fas fa-user"></i></li>
+          <li class="media__icon"><i class="fas fa-map-marker-alt"></i></li>
+          <li class="media__icon"><i class="fas fa-bars"></i></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Tab menu -->
+    <div class="coffee__tab hide">   
+    <div class="tab">
+      <div class="coffee__tab__top">
+        <ul>
+      <li class="tab__title">커피</li>
+      <li class="tab__content">스타벅스 원두</li>
+      <li class="tab__content">스타벅스 비아</li>
+      <li class="tab__content">스타벅스 오리가미</li>
+    </ul>
+  <ul>
+  <li>나와 어울리는 커피</li>
+  </ul>
+  <ul>
+    <li class="tab__title">스타벅스 리저브</li>
+    <li class="tab__content">RESERVE MAGAZINE</li>
+  </ul>
+  <ul>
+    <li class="tab__title">에스프레소 음료</li>
+    <li class="tab__content">도피오</li>
+    <li class="tab__content">에스프레소 마키아또</li>
+    <li class="tab__content">아메리카노</li>
+    <li class="tab__content">마키아또</li>
+    <li class="tab__content">카푸치노</li>
+    <li class="tab__content">라뗴</li>
+    <li class="tab__content">모카</li>
+    <li class="tab__content">리스트레또 비안코</li>
+  </ul>
+      </div>
+      <div class="coffee__tab__bottom">
+<ul>
+  <li class="tab__title">최상의 커피를 즐기는 법</li>
+  <li class="tab__content">커피 프레스</li>
+  <li class="tab__content">푸어 오버</li>
+  <li class="tab__content">아이스 푸어 오버</li>
+  <li class="tab__content">커피 메이커</li>
+  <li class="tab__content">리저브를 매장에서 다양하게 즐기는 법</li>
+</ul>
+<ul>
+  <li class="tab__title">커피이야기</li>
+  <li class="tab__content">스타벅스 로스트 스팩트럼</li>
+  <li class="tab__content">최상의 아라비카 원두</li>
+  <li class="tab__content">한 잔의 커피가 완성되기 까지</li>
+  <li class="tab__content">클로버 커피 추출 시스템</li>
+  <li class="tab__content">스타벅스 디카페인</li>
+</ul>
+      </div>
+      <div class="tab__bottom">
+        <p class="tab__bottom__title">나와 어울리는 커피 찾기</p>
+        <p class="tab__bottom__content">스타벅스가 여러분에게 어울리는 커피를 찾아드립니다.</p>
+        <p class="tab__bottom__title">최상의 커피를 즐기는 법</p>
+        <p class="tab__bottom__content">여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</p>
+      </div>  
+    </div>
+  </div>
+  <!-- mobile hamburger menu -->
+  <div class="mobile__menu__dim menu__hide"></div>
+  <div class="mobile__menu menu__hide">
+    <div class="mobile__menu__inner">
+    <i class="fas fa-times"></i>
+    <div class="search__m">
+      <form class="menu__form">
+        <input type="input" class="menu__input" >
+        <input class="menu__btn" type="submit" value="Search">       
+        </input>
+      </form>
+    </div>
+    <div class="kategorie__m"></div>
+    <ul class="My__Starbucks__m">
+      <li class="My__Starbucks m__title">My Starbucks <i class="fas fa-chevron-down"></i></li>
+      <li class="My__Starbucks__m__list disappear">한눈에 보기</li>
+      <li class="My__Starbucks__m__list disappear">My 리워드</li>
+      <li class="My__Starbucks__m__list disappear">My 스타벅스 카드</li>
+      <li class="My__Starbucks__m__list disappear">My 스타벅스 e-Gift Card</li>
+      <li class="My__Starbucks__m__list disappear">My 쿠폰</li>
+    </ul>
+    <ul class="COFFEE__m">
+      <li class="COFFEE m__title">COFFEE <i class="fas fa-chevron-down"></i></li>
+      <li class="COFFEE__m__list disappear">한눈에 보기</li>
+      <li class="COFFEE__m__list disappear">커피</li>
+      <li class="COFFEE__m__list disappear">나와 어울리는 커피</li>
+      <li class="COFFEE__m__list disappear">스타벅스 리저브</li>
+      <li class="COFFEE__m__list disappear">에스프레소 음료</li>
+      <li class="COFFEE__m__list disappear">최상의 커피를 즐기는 법</li>
+      <li class="COFFEE__m__list disappear">커피 이야기</li>
+    </ul>
+    <ul class="STORE__m">
+      <li class="STORE m__title">STORE <i class="fas fa-chevron-down"></i></li>
+      <li class="STORE__m__list disappear">한눈에 보기</li>
+      <li class="STORE__m__list disappear">매장 찾기</li>
+      <li class="STORE__m__list disappear">드라이브 스루 매장</li>
+    </ul>
+    <ul class="RESPONSIBILITY__m">
+      <li class="RESPONSIBILITY m__title">RESPONSIBILITY <i class="fas fa-chevron-down"></i></li>
+      <li class="RESPONSIBILITY__m__list disappear">한눈에 보기</li>
+      <li class="RESPONSIBILITY__m__list disappear">사회 공헌 캠페인 소개</li>
+      <li class="RESPONSIBILITY__m__list disappear">지역 사회 참여 활동</li>
+      <li class="RESPONSIBILITY__m__list disappear">환경보호 활동</li>
+      <li class="RESPONSIBILITY__m__list disappear">윤리 구매</li>
+      <li class="RESPONSIBILITY__m__list disappear">글로벌 사회 공헌</li>
+    </ul>
+    <ul class="Starbucks__Rewards__m">
+      <li class="Starbucks__Rewards m__title">Starbucks Rewards <i class="fas fa-chevron-down"></i></li>
+      <li class="Starbucks__Rewards__m__list disappear">한눈에 보기</li>
+      <li class="Starbucks__Rewards__m__list disappear">스타벅스 리워드</li>
+      <li class="Starbucks__Rewards__m__list disappear">스타벅스 카드</li>
+      <li class="Starbucks__Rewards__m__list disappear">스타벅스 e-Gift Card</li>
+    </ul>
+    <ul class="WHATS__NEW__m">
+      <li class="WHATS__NEW m__title">WHAT'S NEW <i class="fas fa-chevron-down"></i></li>
+      <li class="WHATS__NEW__m__list disappear">한눈에 보기</li>
+      <li class="WHATS__NEW__m__list disappear">이벤트</li>
+      <li class="WHATS__NEW__m__list disappear">뉴스</li>
+      <li class="WHATS__NEW__m__list disappear">매장별 이벤트</li>
+      <li class="WHATS__NEW__m__list disappear">공지사항</li>
+      <li class="WHATS__NEW__m__list disappear">월페이퍼</li>
+    </ul>
+  </div>
+</div>
+    <!-- Main -->
+    <!-- Badge -->
+    <div class="badge">
+      <div class="close__badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+      <img src="img/badge/9vF68i_20210218134428291.png" />
+    </div>
+    <!-- New__menu -->
+    <section id="New__menu">
+      <div class="New__menu__bg">
+          <div class="New__menu__container">
+            <div class="New__menu__slogan">
+              <img src="img/new__menu/2021_summer2_slogan.png" />
+               <button class="New__menu__btn">자세히 보기</button>
+            </div>                
+            <div class="frappuccino">
+              <div class="frappuccino__item">
+                <img src="img/new__menu/2021_summer2_frappuccino.png" />
+              </div>
+              <div class="frappuccino__intro">
+                <img src="img/new__menu/2021_summer2_frappuccino_tit.png" />
+              </div>
+              <div class="frappuccino__m__intro">
+                <img src="img/new__menu/2021_m_summer2_frappuccino_tit.png"/>
+              </div>
+            </div>
+            <div class="blended">
+              <div class="blended__item">
+                <img src="img/new__menu/2021_summer2_blended.png" />
+              </div>
+              <div class="blended__intro">
+                <img src="img/new__menu/2021_summer2_blended_tit.png" />
+              </div>
+              <div class="blended__m__intro">
+                <img src="img/new__menu/2021_m_summer2_blended_tit_0609.png"/>
+              </div>
+            </div>
+            <div class="tea">
+              <div class="tea__item">
+                <img src="img/new__menu/2021_summer2_iced_tea.png" />
+              </div>
+              <div class="tea__intro">
+                <img src="img/new__menu/2021_summer2_iced_tea_tit.png" />
+              </div>
+              <div class="tea__m__intro">
+                <img src ="img/new__menu/2021_m_summer2_iced_tea_tit.png"/>
+              </div>
+            </div> 
+      </div>
+    </section>
+    <!-- Notice -->
+    <section id="Notice">
+      <div class="Notice__container">
+        <div class="Notice__banner">
+          <div class="Notice__banner__container">
+            <div class="title__content">
+            <div class="Notice__banner__title">
+          <span class="title__span">공지사항</span>
+          <i class="fas fa-volume-up"></i>
+        </div>
+          <ul class="banner__contents">
+          <li class="banner__content"
+            >전자영수증 서비스 점검 안내</li
+          >
+          <li class="banner__content"
+            >시스템 개선 및 점검 안내</li
+          >
+          <li class="banner__content"
+            >개인정보처리방침 개정안내</li
+          >
+          <li class="banner__content"
+            >스타벅스 카드 이용약관 개정 안내</li
+          >
+        </ul>
+      </div>
+        <button class="Notice__banner__btn">
+          <i class="fas fa-plus"></i>
+        </button>
+        </div>
+        </div>
+        <div class="Notice__promo">
+          <span class="Notice__promo__title">스타벅스 프로모션</span>
+          <button class="Notice__promo__btn">
+            <i class="fas fa-chevron-down promo__icon"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Slide -->
+    <section class="Slide">
+  <div class="slide__box">
+      <div class="banner__container">
+        <div class="banner__img">
+      <img class="banner banner__3 slide__opacity" src="img/Slide/8CV1tZ_20201231084934041.jpg"/>
+      <img class="banner banner__1" src="img/Slide/aDSndV_20210719160743814.jpg"/>
+      <img class="banner banner__2 slide__opacity"  src="img/Slide/gD4Zo0_20210405161704168.jpg"/>
+      <img class="banner banner__3 slide__opacity" src="img/Slide/8CV1tZ_20201231084934041.jpg"/>
+      <img class="banner banner__1" src="img/Slide/aDSndV_20210719160743814.jpg"/>
+      </div>
+      <div class="banner__arrow">
+        <button class="arrow__left">
+        <img src="img/Slide/arrow_left_on.png" />
+        </button>
+        <button class="arrow__right">
+        <img src="img/Slide/arrow_right_on.png" />
+      </button>
+      </div>
+      <button class="slide__main__btn">자세히 보기</button>
+      <div class="slide__btns">
+        <button class="play__btn">
+          <img class="play" src="img/Slide/main_prom_stop.png"/>
+        </button>  
+          <div class="off__btns">
+          <input type ="checkbox" id="off first">
+          <label for="off first"></label>
+          <input type ="checkbox" id="off second">
+          <label for="off second"></label>
+          <input type ="checkbox" id="off third">
+          <label for="off third"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+    <!-- Rewards -->
+    <section class="Rewards">
+      <div class="Rewards__container">
+        <div class="Rewards__logo">
+          <img src="img/Reward/rewards-logo.png" />
+        </div>
+        <div class="question">
+          <h2 class="question__title">
+            <strong>스타벅스만의 특별한 혜택, 
+              <br class ="question__br">
+              스타벅스 리워드</strong>
+          </h2>
+          <div class="answer">
+            <p class="answer__content">
+              스타벅스 회원이세요? 
+              <br class="answer__m__br">
+              로그인을 통해 
+              <br class="answer__br1">
+              나만의 리워드를 확인해보세요.
+              <br />
+              스타벅스 회원이 아니세요? 
+              <br class="answer__br2">
+              가입을 통해 리워드 혜택을 즐기세요.
+            </p>
+            <div class="question__btns">
+              <button class="join__btn">회원가입</button>
+              <button class="login__btn">로그인</button>
+            </div>
+          </div>
+          <div class="e-gift">
+            <span class="e-gift__content"
+              >회원 가입 후, 스타벅스 e-Gift Card를 
+              <br class="e-gift__br1">
+              "나에게 선물하기"로
+              구매하시고, 
+              <br class="e-gift__m__br">
+              편리하게 등록하세요!
+              <br />
+              카드를 등록하여 스타벅스 리워드 회원이 되신 후, 
+              <br class="e-gift__br2">
+              첫 구매를 하시면
+              무료 음료쿠폰을 드립니다!</span
+            >
+            <button class="e-gift__btn">e-Gift Card 선물하기</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Papua__coffee -->
+    <section id="Papua__coffee">
+      <div class="Papua__coffee__bg">
+        <div class="Papua__coffee__m__bg"></div>
+        <div class="Papua__coffee__container">
+          <div id="Papua__coffee__img">
+            <img src="img/Papua__coffee/2021_summer2_bean.png" />
+          </div>
+          <div id="Papua__content" >
+            <p class="Papua__coffee__mini__title">
+              여유로움과 시원함을 더해 줄
+            </p>
+            <p class="Papua__coffee__title">
+              파푸아 뉴 기니 블론드 로스트 250g
+            </p>
+            <p class="Papua__coffee__intro">
+              파푸아 뉴 기니의 비옥한 화산 토양과 
+              <br class="Papua__coffee__br1">
+              온화한 열대 기후가 만든
+              매력적인 이 커피를, <br />
+              Bright하고 Juicy함을 더욱 잘 느낄 수 있는 
+              <br class="Papua__coffee__br2">
+              블론드 로스트를 만나 보세요.
+            </p>
+            <button class="Papua__coffee__btn">자세히 보기</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Brazil__coffee -->
+    <section class="Brazil__coffee">
+      <div class="Brazil__coffee__container">
+        <div class="Brazil__coffee__half__bg">
+          <img class ="Brazil__half" src="img/Brazil__coffee/reserve_sundried_brazil_bean4_1.png">
+          <img class ="Brazil__m" src="img/Brazil__coffee/m_reserve_sundried_brazil_bean.jpeg">
+        </div>
+          <div class="Brazil__coffee__title">
+            <img src="img/Brazil__coffee/reserve_sundried_brazil_title.png" />
+          </div>
+          <button class="Brazil__coffee__btn">자세히 보기</button>
+      </div>
+    </section>
+    <!-- Pick__menu -->
+    <section id="Pick__menu">
+      <div class="Pick__menu__bg">
+        <div class="Pick__menu__txt">
+          <div class="Pick__menu__title">
+            <img src="img/Pick__menu/fav_prod_txt01.png" />
+          </div>
+          <div class="Pick__menu__content">
+            <img src="img/Pick__menu/fav_prod_txt02.png" />
+          </div>
+          <button class="Pick__menu__btn">자세히 보기</button>
+        </div>
+        <div class="Pick__menu__img">
+          <img src="img/Pick__menu/2021_summer2_fav.png" />
+        </div>
+        <div class="Pick__menu__m">
+          <img class="Pick__menu__m__1" src="img/Pick__menu/mobile_menu_txt01.png">
+          <img class="Pick__menu__m__2" src="img/Pick__menu/mobile_menu_txt02.png">
+        </div>
+      </div>
+    </section>
+    <!-- Reserve -->
+    <section class="Reserve">
+      <div class="Reserve__container">
+        <div class="Reserve__img">
+          <img src="img/Reserve/reserve_visual_pc.png" />
+        </div>
+        <div class="Reserve__title">
+          <img src="img/Reserve/reserve_text_pc.png" />
+        </div>
+        <button class="Reserve__btn">
+          <img src="img/Reserve/btn_magazine_pc.png" />
+        </button>
+        <div class="Reserve__m__img">
+          <img src="img/Reserve/reserve_visual_mobile.png"/>
+        </div>
+        <div class="Reserve__m__title">
+          <img src="img/Reserve/reserve_text_mobile.png"/>
+        </div>
+      </div>
+    </section>
+    <!-- Store -->
+    <section class="Store">
+      <div class="Store__container">
+      <div class="Store__bg__img">
+        <div class="Store__bg__img__coffee">
+          <img src="img/Store/store_exp_img03.png" />
+        </div>
+        <div class="Store__bg__img__house">
+          <img src="img/Store/store_exp_img04.png" />
+        </div>
+        <div class="Store__img">
+          <div class="Store__img__big">
+          <img src="img/Store/store_exp_img02.png" />
+          </div>
+          <div class="Store__img__small">
+          <img src="img/Store/store_exp_img01.png" />
+          </div>
+        </div>
+        <div class="Store__txt">
+          <div class="Store__title">
+            <img src="img/Store/store_txt01.png" />
+          </div>
+          <div class="Store__content">
+            <img src="img/Store/store_txt02.png" />
+          </div>
+          <di2 class="Store__m__txt">
+            <img class="Store__m__1"src="img/Store/mobile_store_txt01.png" />
+            <img class="Store__m__2"src="img/Store/mobile_store_txt02.png" />
+          </di2>
+          <button class="Store__btn">매장 찾기</button>
+        </div>
+      </div>
+    </div>
+    </section>
+  </body>
+  <!-- footer -->
+  <footer class="footer">
+    <!-- footer__list -->
+    <div class="footer__list">
+      <ul class="company">
+        <li class="company__title">COMPANY </li>
+        <li class="company__list">한눈에 보기</li>
+        <li class="company__list">스타벅스 사명</li>
+        <li class="company__list">스타벅스 소개</li>
+        <li class="company__list">국내 뉴스룸</li>
+        <li class="company__list">세계의 스타벅스</li>
+        <li class="company__list">글로벌 뉴스룸</li>
+      </ul>
+      <ul class="corpor">
+        <li class="corpor__title">CORPORATE SALES </li>
+        <li class="corpor__list">단체 및 기업 구매 안내</li>
+      </ul>
+      <ul class="community">
+        <li class="community__title">ONLINE COMMUNITY </li>
+        <li class="community__list">페이스북</li>
+        <li class="community__list">트위터</li>
+        <li class="community__list">유튜브</li>
+        <li class="community__list">인스타그램</li>
+      </ul>
+      <ul class="partner">
+        <li class="partner__title">PARTNERSHIP </li>
+        <li class="partner__list">신규 입점 제의</li>
+        <li class="partner__list">협력 고객사 등록신청</li>
+      </ul>
+      <ul class="recquit">
+        <li class="recquit__title">RECRUIT</li>
+        <li class="recquit__list">채용 소개</li>
+        <li class="recquit__list">채용 지원하기</li>
+      </ul>   
+    </div>
+    <!--footer__m__list  -->
+    <div class="footer__m__list">
+      <ul class="service__m">
+        <li class="service__m__title">CUSTOMER SERVICE & IDEAS <i class="fas fa-chevron-down footer__arrow"></i></li>
+        <li class="service__m__list disappear">자주하는 질문</li>
+        <li class="service__m__list disappear">고객의 소리</li>
+        <li class="service__m__list disappear">스타벅스 이용 팁</li>
+        <li class="service__m__list disappear">고객경험 설문조사</li>
+        <li class="service__m__list disappear">비회원 전자영수증 조회</li>
+      </ul>
+      <ul class="company__m">
+        <li class="company__m__title">COMPANY <i class="fas fa-chevron-down footer__arrow"></i></li>
+        <li class="company__m__list disappear">한눈에 보기</li>
+        <li class="company__m__list disappear">스타벅스 사명</li>
+        <li class="company__m__list disappear">스타벅스 소개</li>
+        <li class="company__m__list disappear">국내 뉴스룸</li>
+        <li class="company__m__list disappear">세계의 스타벅스</li>
+        <li class="company__m__list disappear">글로벌 뉴스룸</li>
+      </ul>
+      <ul class="corporate__m">
+        <li class="corporate__m__title">CORPORATE SALES <i class="fas fa-chevron-down footer__arrow"></i></li>
+        <li class="corporate__m__list disappear">단체 및 기업 구매 안내</li>
+      </ul>
+      <ul class="partnership__m">
+        <li class="partnership__m__title">PARTNERSHIP <i class="fas fa-chevron-down footer__arrow"></i></li>
+        <li class="partnership__m__list disappear">신규 입점 제의</li>
+        <li class="partnership__m__list disappear">협력 고객사 등록신청</li>
+      </ul>
+      <ul class="community__m">
+        <li class="community__m__title">ONLINE COMMUNITY <i class="fas fa-chevron-down footer__arrow"></i></li>
+        <li class="community__m__list disappear">페이스북</li>
+        <li class="community__m__list disappear">트위터</li>
+        <li class="community__m__list disappear">유튜브</li>
+        <li class="community__m__list disappear">인스타그램</li>
+      </ul>
+      <ul class="recruit__m">
+        <li class="recruit__m__title">RECRUIT <i class="fas fa-chevron-down footer__arrow"></i></li>
+        <li class="recruit__m__list disappear">채용 소개</li>
+        <li class="recruit__m__list disappear">채용 지원하기</li>
+      </ul>
+    </div>
+    <ii class="footer__logo">
+      <img src="img/footer/footer_logo.png" />
+    </ii>
+    <!-- footer m btn -->
+    <div class="footer__m__btns">
+     <button class="footer__m__btn">HOME</button>
+     <button class="footer__m__btn">Sign In</button>
+     <button class="footer__m__btn">Join Us</button>
+    </div>
+    <!-- footer__banner -->
+    <div class="footer__banner">
+      <div class="footer__banner__1">
+        <img src="img/footer/footer_award17_01.jpg" />
+      </div>
+      <div class="footer__banner__2">
+        <img src="img/footer/footer_award17_02.jpg" />
+      </div>
+      <div class="footer__banner__3">
+        <img src="img/footer/footer_award17_03.jpg" />
+      </div>
+      <div class="footer__banner__4">
+        <img src="img/footer/footer_award17_04.jpg" />
+      </div>
+      <div class="footer__banner__5">
+        <img src="img/footer/footer_award17_05.jpg" />
+      </div>
+      <div class="footer__banner__6">
+        <img src="img/footer/footer_award17_06.jpg" />
+      </div>
+    </div>
+    <!-- banner resize -->
+    <div class="footer__resize__banner">
+    <div class="footer__banner__top">
+      <div class="footer__banner__1">
+        <img src="img/footer/footer_award17_01.jpg" />
+      </div>
+      <div class="footer__banner__2">
+        <img src="img/footer/footer_award17_02.jpg" />
+      </div>
+      <div class="footer__banner__3">
+        <img src="img/footer/footer_award17_03.jpg" />
+      </div>
+    </div>
+    <div class="footer__banner__bottom">
+      <div class="footer__banner__4">
+        <img src="img/footer/footer_award17_04.jpg" />
+      </div>
+      <div class="footer__banner__5">
+        <img src="img/footer/footer_award17_05.jpg" />
+      </div>
+      <div class="footer__banner__6">
+        <img src="img/footer/footer_award17_06.jpg" />
+      </div>
+      </div>
+    </div>
+    <!-- footer__terms and conditions -->
+    <div class="terms__and__conditions">
+      <a class="tac__list__green">개인정보처리방침</a>
+      <a class="tac__list">영상정보처리기기 운영관리 방침</a>
+      <br class="footer__br">
+      <a class="tac__list">홈페이지 이용약관</a>
+      <a class="tac__list">위치정보 이용약관</a>
+      <br class="footer__br">
+      <a class="tac__list">스타벅스 카드 이용약관</a>
+      <a class="tac__list">비회원 이용약관</a>
+      <br class="footer__br">
+      <a class="tac__list">My DT Pass서비스 이용약관</a>
+      <a class="tac__list">윤리경영 핫라인</a>
+    </div>
+    <!-- footer__btn -->
+    <div class="footer__btns">
+      <button class="footer__btn">찾아오시는 길</button>
+      <button class="footer__btn">신규입점제의</button>
+      <button class="footer__btn">사이트맵</button>
+    </div>
+    <!-- footer__info -->
+    <div class="footer__info">
+      <span class="info__list">사업자등록번호 : 201-81-21515</span>
+      <span class="info__list">
+        (주)스타벅스커피 코리아 대표이사 : 송 데이비드 호섭
+      </span>
+      <span class="info__list">TEL : 1522-3232</span>
+      <span class="info__list">개인정보 책임자 : 하익성</span>
+    </div>
+    <span class="footer__rights"
+      >ⓒ 2024 Starbucks Coffee Company. All Rights Reserved.</span
+    >
+  </footer>
+</html>
